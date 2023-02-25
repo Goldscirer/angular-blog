@@ -1,0 +1,30 @@
+.image__container {
+  max-width: 100%;
+  aspect-ratio: 2/1;
+  object-fit: fill;
+  height: auto;
+}
+
+.button__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 250px;
+}
+
+.description__container {
+  flex: 1;
+}
+
+.description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}

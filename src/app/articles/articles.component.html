@@ -1,25 +1,12 @@
 <div class="container">
-    <div class="row m-5">
-      <div class="col">
-        <app-card></app-card>
-      </div>
-      <div class="col">
-        <app-card></app-card>
-      </div>
-      <div class="col">
-        <app-card></app-card>
-      </div>
+  <div class="row m-5 gy-3">
+    <div class="col-md-4" *ngFor="let article of articles">
+      <app-card
+        [header]="article.attributes.title"
+        [description]="article.attributes.lead"
+        [imageURL]="article.attributes.image.data[0].attributes.url"
+        [postId]="article.id"
+      ></app-card>
     </div>
-    <div class="row m-5">
-        <div class="col">
-            <app-card></app-card>
-        </div>
-        <div class="col">
-            <app-card></app-card>
-        </div>
-        <div class="col">
-            <app-card></app-card>
-        </div>
-      </div>
   </div>
-  
+</div>

@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row m-5 gy-3">
+        <ng-container *ngIf="post">
+        <h6 class="text-uppercase">{{post.data.attributes.createdAt | date}} · 6 min read</h6>
+        <h1>{{post.data.attributes.title}}</h1>
+        <h4 class="text-secondary">{{post.data.attributes.lead}}</h4>
+        <div class="main-image__container">
+            <img src="{{imageURL}}" class="img-fluid align-self-center" alt="Obraz ilustrujący {{post.data.attributes.title}}">    
+        </div>
+        <p>{{post.data.attributes.article}}</p>  
+    </ng-container>
+</div>
+</div>
